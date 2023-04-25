@@ -13,9 +13,13 @@ const chat = new ChatGPTAPI({
 });
 
 async function main() {
-  const resp = await chat.sendMessage('Olá, poderia me escrever um poema?');
+  const message = process.argv.at(2);
 
-  console.log(resp);
+  if (!message) throw new Error(`Can't find message on argv[2]!`);
+
+  const resp = await chat.sendMessage(message);
+
+  console.log('Chat GPT:\n' + resp.text);
 }
 
 main();
