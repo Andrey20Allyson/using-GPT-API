@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsx src"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +12,7 @@
   "dependencies": {
     "@types/node": "^18.16.0",
     "chatgpt": "^5.2.2",
+    "colors": "^1.4.0",
     "dotenv": "^16.0.3",
     "tsx": "^3.12.6",
     "typescript": "^5.0.4"
