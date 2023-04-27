@@ -1,7 +1,7 @@
 import { ChatGPTAPI, ChatMessage } from 'chatgpt';
 import colors from 'colors';
 import { ReadStream, WriteStream } from 'tty';
-import { ObjectRef, progressWriter, prompt, endLine } from './utils';
+import { ObjectRef, progressWriter, prompt, endLine } from './utils.mjs';
 
 export enum Command {
   EXIT,

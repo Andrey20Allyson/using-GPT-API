@@ -1,5 +1,7 @@
+#!/usr/bin/env node
+
 import { config } from 'dotenv';
-import { PromptChat } from './prompt-chat';
+import { PromptChat } from './prompt-chat/index.mjs';
 
 config();
 
